@@ -5,7 +5,9 @@
 <title>반응형 홈페이지</title><!-- 문서의 제목을 브라우저상단왼쪽에 표시 -->
 <style>
 /*모바일용 스타일지정 시작*/
-
+span {
+display:inline-block;height:10px;width:50px;background-color:red;
+}
 /*모바일용 스타일지정 끝*/
 </style>
 <script>
@@ -18,8 +20,10 @@
 </div id="wrap"><!-- 랩핑시킨 영역 -->
 <header>
 <!-- 상단 로고와 햄버거 메뉴영여 시작 -->
-LOGO
-햄버거메뉴
+<h1>LOGO</h1><!-- 헤드라인 글자를 표시 1~6 -->
+<span></span>
+<!-- span 자리를 차지하지 않는 영역 한뼘 -->
+<span style="width:50px;background-color:red;"></span><span></span><span></span>
 HOME
 WE ARE
 WORK
@@ -29,12 +33,12 @@ CONTACT US
 </header>
 <section><!-- division이라는 영역표시 태그 -->
 <!-- 본문 슬라이드 영역 시작 -->
-
+슬라이드이미지1
 <!-- 본문 슬라이드 영역 끝 -->
 </section>
 <footer>
 <!-- 하단 로고 영역 시작 -->
-
+LOGO
 <!-- 하단 로고 영역 끝 -->
 </footer>
 </div>
