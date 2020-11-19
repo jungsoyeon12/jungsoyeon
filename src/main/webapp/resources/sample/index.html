@@ -6,10 +6,23 @@
 <link rel="stylesheet" href="/resources/sample/css/reset.css" type="text/css">
 <style>
 /*모바일용 스타일지정 시작*/
-#header span {
+/*헤더영역 시작*/
+.header {
+position:relative;/*상대적인 위치*/
+padding:58px 5% 58px;/*여백; 바깥쪽여백은 margin*/
+}
+.header .Logo {
+float:Left;/*프로트:떠다니는 영역:역할은 세로배치를 가로배치로 변경처리에 사용*/
+}
+.header .menu-toggle-btn {
+float:right;
+}
+.header span {
 display:block;height:10px;width:50px;background-color:red;
 margin-bottom:10px;
 }
+/* 헤더영역 끝 */
+/* 본문섹션 슬라이드영역 시작 */
 #wrap .slider img {width:100%;}/* Cascade Style Sheet 특징 계단형 스타일지정 *
 }
 
@@ -23,12 +36,15 @@ margin-bottom:10px;
 </head>
 <body><!-- 문서내용 들어가는 영역 -->
 </div id="wrap"><!-- 랩핑시킨 영역 -->
-<header id="header">
+<header class="header">
 <!-- 상단 로고와 햄버거 메뉴영여 시작 -->
-<h1>LOGO</h1><!-- 헤드라인 글자를 표시 1~6 -->
+<h1 class="Logo">LOGO</h1><!-- 헤드라인 글자를 표시 1~6 -->
+<div class="menu-toggle-btn"></div>
 <span></span>
 <span></span>
 <span></span>
+</div>
+<nav class="gnb">
 <!-- 리스트를 모여주는 태그 ul -->
 <ul>
 <!-- span 자리를 차지하지 않는 영역 한뼘 -->
