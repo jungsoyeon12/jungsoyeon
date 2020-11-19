@@ -9,37 +9,74 @@
 /*헤더영역 시작*/
 .header {
 position:relative;/*상대적인 위치*/
-padding:58px 5% 58px;/*여백; 바깥쪽여백은 margin*/
+padding:0px 2% 18px;/*여백; 바깥쪽여백은 margin*/
 }
 .header .Logo {
 float:Left;/*프로트:떠다니는 영역:역할은 세로배치를 가로배치로 변경처리에 사용*/
 }
+.header .Logo a {
+font-size:26px;
+color:#3f51b5;
+font-weight:normal;
+text-indent:-9999%;
+display:block;
+height:100px;
+}
 .header .menu-toggle-btn {
 float:right;
+widtn:20px;
+margin-top:28px;
+cursor:pointer;
 }
-.header span {
-display:block;height:10px;width:50px;background-color:red;
+.menu-toggle-btn span {
+display:block;height:2px;width:100px;background-color:red;
 margin-bottom:10px;
+}
+.header .gnb {
+display:block;
+position:absolute;
+top:80px;
+left:0px;
+width:100%;
+background:#3f51b5;
+z-index:21;
+}
+.header .gnb li {
+border:1px solid #303f9f;
+border-bottom:2px solid #303f9f;
+}
+.header .gnb li:last-child {
+border-bottom:1px solid #303f9f;
+}
+.header .gnb li a {
+display:block;
+padding:5px 0 5px 5%;
+font-size:14px;
+color:#fff;
 }
 /* 헤더영역 끝 */
 /* 본문섹션 슬라이드영역 시작 */
-#wrap .slider img {width:100%;}/* Cascade Style Sheet 특징 계단형 스타일지정 *
+{
+#wrap .slider img {width:100%;}/* Cascade Style Sheet 특징 계단형 스타일지정 */
 }
-
 /*모바일용 스타일지정 끝*/
 </style>
 <script>
 /* 자바스크립트 시작 */
- 
+var toggle_menu = document.getElementByClassName("menu-toggle-btn")[0];
+toggle_menu.onClick = function ()
  /* 자바스크립트 끝 */
 </script>
 </head>
 <body><!-- 문서내용 들어가는 영역 -->
-</div id="wrap"><!-- 랩핑시킨 영역 -->
+<div id="wrap">
+<!-- 랩핑시킨 영역 -->
 <header class="header">
-<!-- 상단 로고와 햄버거 메뉴영여 시작 -->
-<h1 class="Logo">LOGO</h1><!-- 헤드라인 글자를 표시 1~6 -->
-<div class="menu-toggle-btn"></div>
+<!-- 상단 로고와 햄버거 메뉴영역 시작 -->
+<h1 class="Logo">
+<a>LOGO</a>
+</h1>
+<div class="menu-toggle-btn">
 <span></span>
 <span></span>
 <span></span>
@@ -48,17 +85,17 @@ margin-bottom:10px;
 <!-- 리스트를 모여주는 태그 ul -->
 <ul>
 <!-- span 자리를 차지하지 않는 영역 한뼘 -->
-<li>HOME</li>
-<li>WE ARE</li>
-<li>WORK</li>
-<li>BLOG</li>
-<li>CONTACT US</li>
+<li><a href="index.html">HOME</a></li>
+<li><a href="weare.html"><a>WE ARE</a></li>
+<li><a href="work.html"><a>WORK</a></li>
+<li><a href="blog.html"><a>BLOG</a></li>
+<li><a href="contact.html"><a>CONTACT US</a></li>
 </ul>
+</nav>
 <!-- 상단 로고와 햄버거 메뉴영역 끝 -->
 </header>
 <section><!-- division이라는 영역표시 태그 -->
 <!-- 본문 슬라이드 영역 시작 -->
-슬라이드이미지1
 <!-- 이미지 불러오는 태그 img-->
 <div class="slider">
 <img src="./img/puppy.jpg" style="width:100%;" alt="퍼피 이미지입니다.">
@@ -71,4 +108,5 @@ LOGO
 <!-- 하단 로고 영역 끝 -->
 </footer>
 </div>
+</body>
 </html>
