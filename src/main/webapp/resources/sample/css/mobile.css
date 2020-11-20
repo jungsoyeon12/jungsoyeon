@@ -72,6 +72,41 @@ margin: 21px 0px;
 color:#3f51b5;
 text-align:center;
 }
-
 /* 푸터영역 끝 */
+
+/* we are영역  */
+.weare-header {
+margin-top:30px;
+text-align:center;
+}
+.section-title {
+margin-bottom:30px;
+font-size:42px;
+color:#3f51b5;
+font-weight:nomal;
+letter-spacing:5px;
+}
+.weare-header p {
+color:#616161;
+line-height:1.9;
+font-size:14px;
+}
+.weare-body {
+margin-top:68px;
+}
+.weare-body li {
+text-align:center;
+margin-top:50px;
+}
+.weare-body img {
+height:220px;
+}
+.weare-body li h2 {
+margin:20px 0px;
+font-size:30px;
+font-weight:normal;
+color:#3f51b5;
+}
+.weare-body li p {font-size:14px;}
+/* we are영역 끝 */
 /* 모바일용 스타일지정 끝 */
